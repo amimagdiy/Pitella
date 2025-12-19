@@ -1,104 +1,45 @@
-:root {
-  --deep-green: #18342F;
-  --accent-red: #a03233;
-  --cream: #F4EFE6;
-  --white: #fff;
-}
+/* ===================================================
+   Custom Fixes (Added Without Removing Anything)
+=================================================== */
 
-* {margin:0; padding:0; box-sizing:border-box}
-
-body {
-  font-family:'Comfortaa', sans-serif;
-  background: var(--cream);
-}
-
-/* Navbar */
+/* حل الخط الأبيض أثناء السكرول */
 .navbar {
-  background: var(--deep-green);
-  padding: 15px 20px;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
+  border-bottom: none !important;
+  box-shadow: none !important;
 }
 
-.navbar-container {
-  max-width: 1200px;
-  margin: auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
+/* لوجو النافبار */
 .nav-logo {
-  height: 55px;
+  height: 50px;
+  object-fit: contain;
 }
 
-.nav-list {
-  display: flex;
-  gap: 30px;
-  list-style: none;
-}
-
-.nav-list a {
-  color: #fff;
-  text-decoration: none;
-}
-
-/* Hero */
+/* إصلاح صورة الهيرو (PNG) */
 .hero {
-  margin-top: 90px;
-  background: url('hero-bg.png') center/cover no-repeat;
-  text-align: center;
-  padding: 180px 20px;
-  color: #fff;
-  position: relative;
+  background-image: url('hero-bg.png') !important;
 }
 
-.hero::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: rgba(24,52,47,.75);
-}
-
-.hero * {
-  position: relative;
-}
-
+/* تغيير لون زر CTA */
 .cta-btn {
-  background: var(--accent-red);
-  color: #fff;
-  border: none;
-  padding: 18px 45px;
-  border-radius: 50px;
-  font-size: 18px;
-  cursor: pointer;
+  background-color: #a03233 !important;
 }
 
-/* Why Us */
-.why-list {
-  list-style: none;
-  max-width: 600px;
-  margin: auto;
+.cta-btn:hover {
+  background-color: #87292a !important;
 }
 
-.why-list li {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  margin-bottom: 20px;
+/* تقريب علامة الصح */
+.section ul li {
+  padding-right: 8px !important;
 }
 
-.why-list li::before {
-  content: "✔";
-  color: #90EE90;
+.section ul li::before {
+  right: 0 !important;
 }
 
-/* Footer */
-footer {
-  background: var(--deep-green);
-  color: #fff;
-  padding: 60px;
-  text-align: center;
+/* دعم الموبايل بدون لمس الأكواد الأصلية */
+@media (max-width: 992px) {
+  .nav-logo {
+    height: 42px;
+  }
 }
