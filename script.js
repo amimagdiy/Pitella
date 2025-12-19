@@ -1,4 +1,4 @@
-// Language Toggle - زر واحد
+// Language Toggle
 const langToggle = document.getElementById('lang-toggle');
 const langText = langToggle.querySelector('.lang-text');
 const translatable = document.querySelectorAll('[data-ar][data-en]');
@@ -25,9 +25,48 @@ langToggle.addEventListener('click', () => {
 });
 
 // Hamburger Menu
-document.querySelector('.hamburger').addEventListener('click', () => {
-    document.querySelector('.nav-list').classList.toggle('active');
+const hamburger = document.querySelector('.hamburger');
+const navList = document.querySelector('.nav-list');
+
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    navList.classList.toggle('active');
 });
 
-// Default Arabic
-langToggle.querySelector('.lang-text').textContent = 'AR';
+// Fade In on Scroll
+const fadeElems = document.querySelectorAll('.fade-in');
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+        }
+    });
+}, { threshold: 0.15 });
+
+fadeElems.forEach(el => observer.observe(el));
+
+// Header Scroll Effect
+window.addEventListener('scroll', () => {
+    document.querySelector('.header').classList.toggle('scrolled', window.scrollY > 100);
+});
+
+// Parallax Effect for Hero
+window.addEventListener('scroll', () => {
+    const scrolled = window.pageYOffset;
+    const parallax = document.querySelector('.hero');
+    const speed = scrolled * 0.5;
+    parallax.style.backgroundPositionY = `${speed}px`;
+});
+
+// Smooth Scroll for nav links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+        navList.classList.remove('active');
+        hamburger.classList.remove('active');
+    });
+});
