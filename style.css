@@ -38,6 +38,10 @@ body {
   align-items: center;
 }
 
+.nav-list {
+  margin: 0 auto;
+}
+
 .navbar ul {
   list-style: none;
   display: flex;
@@ -265,7 +269,7 @@ footer {
   .navbar ul {
     position: absolute;
     top: 100%;
-    left: 0;
+    right: 0;
     width: 100%;
     background: var(--deep-green);
     flex-direction: column;
