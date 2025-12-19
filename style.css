@@ -151,7 +151,7 @@ body {
   background: var(--deep-green);
   color: var(--text-on-dark);
   border-radius: 30px;
-  margin-bottom: 160px !important; /* مسافة كبيرة تحت القسم الداكن عشان ما يلزقش في الفوتر */
+  margin-bottom: 130px !important; /* مسافة كبيرة تحت القسم الداكن عشان ما يلزقش في الفوتر */
 }
 
 .section h2 {
