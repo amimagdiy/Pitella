@@ -1,92 +1,118 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" id="htmlRoot">
+<html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pitella | Landscape & Garden Design</title>
-
-  <!-- FAVICON -->
-  <link rel="icon" type="image/png" href="favicon.png?v=12">
-
-  <!-- FONT -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pitella - بِتِلَّة | Landscape & Garden Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&family=Nova+Square&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.png" type="image/png">
 </head>
-
 <body>
 
-<button id="langToggle" class="lang-toggle">AR</button>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <img src="logo-full.png" alt="Pitella Logo" class="logo">
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#home" data-ar="الرئيسية" data-en="Home">الرئيسية</a></li>
+                    <li><a href="#about" data-ar="عن بِتِلَّة" data-en="About Pitella">عن بِتِلَّة</a></li>
+                    <li><a href="#services" data-ar="الخدمات" data-en="Services">الخدمات</a></li>
+                    <li><a href="#portfolio" data-ar="معرض الأعمال" data-en="Portfolio">معرض الأعمال</a></li>
+                    <li><a href="#contact" data-ar="تواصل معنا" data-en="Contact">تواصل معنا</a></li>
+                </ul>
+                <div class="language-switcher">
+                    <button id="lang-ar" class="lang-btn active">AR</button>
+                    <button id="lang-en" class="lang-btn">EN</button>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
 
-<header class="hero">
-  <h1 data-en="Pitella" data-ar="بتلة">Pitella</h1>
-  <p data-en="Landscape & Garden Design" data-ar="تصميم وتنفيذ اللاندسكيب والحدائق">
-    Landscape & Garden Design
-  </p>
-</header>
+    <!-- Hero -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1 data-ar="نصمم وننفذ مساحات خضراء مستدامة" data-en="We Design & Implement Sustainable Green Spaces">نصمم وننفذ مساحات خضراء مستدامة</h1>
+            <p data-ar="بِتِلَّة - متخصصون في Softscape وتنسيق الحدائق في مصر" data-en="Pitella - Specialists in Softscape & Garden Design in Egypt">بِتِلَّة - متخصصون في Softscape وتنسيق الحدائق في مصر</p>
+            <a href="#contact" class="btn primary" data-ar="احجز استشارة" data-en="Book a Consultation">احجز استشارة</a>
+        </div>
+    </section>
 
-<!-- About Us -->
-<section class="section">
-  <h2 data-en="About Us" data-ar="عن الشركة">About Us</h2>
-  <p
-    data-en="We are a landscape engineering company dedicated to creating sustainable and elegant outdoor spaces."
-    data-ar="نحن شركة هندسة لاندسكيب متخصصة في تصميم مساحات خارجية مستدامة وأنيقة.">
-    We are a landscape engineering company dedicated to creating sustainable and elegant outdoor spaces.
-  </p>
-</section>
+    <!-- About -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title" data-ar="عن بِتِلَّة" data-en="About Pitella">عن بِتِلَّة</h2>
+            <p data-ar="بِتِلَّة هي شركة ناشئة متخصصة في تصميم وتنفيذ الـ Softscape وتنسيق الحدائق في مصر، مقرها القاهرة." data-en="Pitella is a startup company specializing in Softscape design and garden landscaping in Egypt, based in Cairo.">بِتِلَّة هي شركة ناشئة متخصصة في تصميم وتنفيذ الـ Softscape وتنسيق الحدائق في مصر، مقرها القاهرة.</p>
+            <p data-ar="نحن نركز على إنشاء مساحات خضراء مستدامة وجمالية تتناسب مع المناخ المصري، بقيادة مهندس زراعي شغوف بتحويل الأفكار إلى واقع." data-en="We focus on creating sustainable and aesthetic green spaces suited to the Egyptian climate, led by a passionate agricultural engineer.">نحن نركز على إنشاء مساحات خضراء مستدامة وجمالية تتناسب مع المناخ المصري، بقيادة مهندس زراعي شغوف بتحويل الأفكار إلى واقع.</p>
+        </div>
+    </section>
 
-<!-- Services -->
-<section class="section light">
-  <h2 data-en="Our Services" data-ar="خدماتنا">Our Services</h2>
-  <div class="services">
-    <div class="service-box">
-      <h3 data-en="Landscape Design" data-ar="تصميم اللاندسكيب">Landscape Design</h3>
-      <p data-en="Creative outdoor design solutions." data-ar="حلول تصميم مبتكرة للمساحات الخارجية.">
-        Creative outdoor design solutions.
-      </p>
-    </div>
-    <div class="service-box">
-      <h3 data-en="Smart Irrigation" data-ar="الري الذكي">Smart Irrigation</h3>
-      <p data-en="Efficient irrigation systems tailored to your garden." data-ar="أنظمة ري ذكية تناسب حديقتك.">
-        Efficient irrigation systems tailored to your garden.
-      </p>
-    </div>
-    <div class="service-box">
-      <h3 data-en="Plant Selection" data-ar="اختيار النباتات">Plant Selection</h3>
-      <p data-en="Careful selection of plants suitable for climate and design." data-ar="اختيار نباتات مناسبة للمناخ والتصميم.">
-        Careful selection of plants suitable for climate and design.
-      </p>
-    </div>
-  </div>
-</section>
+    <!-- Services -->
+    <section id="services" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title" data-ar="خدماتنا" data-en="Our Services">خدماتنا</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3 data-ar="تصميم Softscape" data-en="Softscape Design">تصميم Softscape</h3>
+                    <p data-ar="تصميم إبداعي للمساحات الخضراء مع اختيار نباتات مستدامة." data-en="Creative design of green spaces with sustainable plant selection.">تصميم إبداعي للمساحات الخضراء مع اختيار نباتات مستدامة.</p>
+                </div>
+                <div class="service-card">
+                    <h3 data-ar="التنفيذ والإشراف" data-en="Implementation & Supervision">التنفيذ والإشراف</h3>
+                    <p data-ar="تنفيذ كامل للمشروع بإشراف ميداني دقيق." data-en="Full project execution with precise on-site supervision.">تنفيذ كامل للمشروع بإشراف ميداني دقيق.</p>
+                </div>
+                <div class="service-card">
+                    <h3 data-ar="اختيار النباتات" data-en="Plant Selection">اختيار النباتات</h3>
+                    <p data-ar="اختيار نباتات مناسبة للمناخ المصري والتصميم." data-en="Selection of plants suitable for the Egyptian climate and design.">اختيار نباتات مناسبة للمناخ المصري والتصميم.</p>
+                </div>
+                <div class="service-card">
+                    <h3 data-ar="الصيانة الدورية" data-en="Periodic Maintenance">الصيانة الدورية</h3>
+                    <p data-ar="خدمات صيانة وري اتوماتيكي لضمان استمرارية الجمال." data-en="Maintenance and automatic irrigation services to ensure lasting beauty.">خدمات صيانة وري اتوماتيكي لضمان استمرارية الجمال.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<!-- Why Us -->
-<section class="section dark">
-  <h2 data-en="Why Choose Us" data-ar="لماذا تختارنا">Why Choose Us</h2>
-  <ul>
-    <li data-en="Expert agricultural engineering" data-ar="خبرة هندسية زراعية متخصصة">Expert agricultural engineering</li>
-    <li data-en="Sustainable solutions for Egyptian climate" data-ar="حلول مستدامة تناسب المناخ المصري">Sustainable solutions for Egyptian climate</li>
-    <li data-en="Commitment to quality and supervision" data-ar="التزام بالجودة والإشراف الميداني">Commitment to quality and supervision</li>
-  </ul>
-</section>
+    <!-- Portfolio -->
+    <section id="portfolio" class="section">
+        <div class="container">
+            <h2 class="section-title" data-ar="معرض الأعمال" data-en="Portfolio">معرض الأعمال</h2>
+            <p data-ar="كشركة ناشئة، مشاريعنا المتميزة قيد التنفيذ والإضافة قريبًا." data-en="As a startup, our distinguished projects are in progress and will be added soon.">كشركة ناشئة، مشاريعنا المتميزة قيد التنفيذ والإضافة قريبًا.</p>
+        </div>
+    </section>
 
-<!-- Contact -->
-<section class="section dark">
-  <h2 data-en="Contact Us" data-ar="تواصل معنا">Contact Us</h2>
-  <p data-en="Let’s create beautiful outdoor spaces together." data-ar="دعنا نصمم مساحات خارجية جميلة معًا.">
-    Let’s create beautiful outdoor spaces together.
-  </p>
-  <p>Email: pitellalandscape@gmail.com</p>
-  <p>Phone: +20 110 180 6796</p>
-  <p data-en="Nasr City, Cairo, Egypt" data-ar="مدينة نصر، القاهرة، مصر">
-    Nasr City, Cairo, Egypt
-  </p>
-  <button class="cta-btn" data-en="Book a Consultation" data-ar="احجز استشارة">Book a Consultation</button>
-</section>
+    <!-- Contact -->
+    <section id="contact" class="section dark">
+        <div class="container">
+            <h2 class="section-title" data-ar="تواصل معنا" data-en="Contact Us">تواصل معنا</h2>
+            <form action="https://formspree.io/f/xbljwpjd" method="POST" class="contact-form">
+                <input type="text" name="name" placeholder="اسمك" data-en-placeholder="Your Name" required>
+                <input type="tel" name="phone" placeholder="رقم التليفون" data-en-placeholder="Your Phone" required>
+                <input type="email" name="email" placeholder="الإيميل" data-en-placeholder="Your Email" required>
+                <textarea name="message" placeholder="رسالتك" data-en-placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="btn primary" data-ar="إرسال" data-en="Send">إرسال</button>
+            </form>
+            <div class="contact-info">
+                <p>Email: pitellalandscape@gmail.com</p>
+                <p>Phone: +20 110 180 6796</p>
+                <p data-ar="مدينة نصر، القاهرة، مصر" data-en="Nasr City, Cairo, Egypt">مدينة نصر، القاهرة، مصر</p>
+            </div>
+        </div>
+    </section>
 
-<footer>© 2025 Pitella | All Rights Reserved</footer>
+    <footer class="footer">
+        <div class="container">
+            <img src="logo-white.png" alt="Pitella" class="footer-logo">
+            <p data-ar="© 2025 بِتِلَّة. جميع الحقوق محفوظة." data-en="© 2025 Pitella. All rights reserved.">© 2025 بِتِلَّة. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
 
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
