@@ -1,37 +1,24 @@
-// Hamburger Menu
-const hamburger = document.querySelector('.hamburger');
-const navList = document.querySelector('.nav-list');
+// Language Switcher
+const langAr = document.getElementById('lang-ar');
+const langEn = document.getElementById('lang-en');
+const translatable = document.querySelectorAll('[data-ar][data-en]');
+const html = document.documentElement;
 
-hamburger.addEventListener('click', () => {
-    navList.classList.toggle('active');
-    hamburger.classList.toggle('active');
+langAr.addEventListener('click', () => {
+    translatable.forEach(el => el.textContent = el.dataset.ar);
+    html.lang = 'ar';
+    html.dir = 'rtl';
+    langAr.classList.add('active');
+    langEn.classList.remove('active');
 });
 
-// Fade In on Scroll
-const fadeElems = document.querySelectorAll('.fade-in');
-
-const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-        }
-    });
-}, { threshold: 0.1 });
-
-fadeElems.forEach(elem => observer.observe(elem));
-
-// Header Scroll Effect
-window.addEventListener('scroll', () => {
-    document.querySelector('.header').classList.toggle('scrolled', window.scrollY > 50);
+langEn.addEventListener('click', () => {
+    translatable.forEach(el => el.textContent = el.dataset.en);
+    html.lang = 'en';
+    html.dir = 'ltr';
+    langEn.classList.add('active');
+    langAr.classList.remove('active');
 });
 
-// Smooth Scroll
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-        navList.classList.remove('active'); // إغلاق المينيو على الموبايل
-    });
-});
+// Default Arabic
+langAr.click();
