@@ -151,7 +151,7 @@ body {
   background: var(--deep-green);
   color: var(--text-on-dark);
   border-radius: 30px;
-  margin-bottom: 110px !important; /* مسافة كبيرة تحت القسم الداكن عشان ما يلزقش في الفوتر */
+  margin-bottom: 100px !important; /* مسافة كبيرة تحت القسم الداكن عشان ما يلزقش في الفوتر */
 }
 
 .section h2 {
@@ -196,7 +196,7 @@ body {
 
 .section ul li {
   margin-bottom: 20px;
-  padding-right: 30px;
+  padding-right: 20px;
   position: relative;
   font-size: 1.2rem;
 }
