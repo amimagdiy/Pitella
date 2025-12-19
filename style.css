@@ -24,6 +24,7 @@ h1, h2, h3 {
     text-decoration: none;
     display: inline-block;
     transition: 0.3s;
+    font-weight: bold;
 }
 
 .btn:hover {
@@ -66,22 +67,32 @@ h1, h2, h3 {
 }
 
 .language-switcher {
-    display: flex;
-    gap: 10px;
+    margin-left: 20px;
 }
 
-.lang-btn {
-    background: transparent;
-    border: 1px solid white;
+#lang-toggle {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.4);
     color: white;
-    padding: 8px 15px;
-    border-radius: 20px;
+    padding: 10px 20px;
+    border-radius: 30px;
     cursor: pointer;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
 }
 
-.lang-btn.active {
+#lang-toggle:hover {
     background: #90EE90;
     color: #18342F;
+    border-color: #90EE90;
+}
+
+.lang-icon {
+    font-size: 1.2rem;
 }
 
 .hamburger {
@@ -117,6 +128,9 @@ h1, h2, h3 {
 .hero-content {
     position: relative;
     color: white;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .hero h1 {
@@ -129,7 +143,7 @@ h1, h2, h3 {
     margin-bottom: 40px;
 }
 
-/* Sections */
+/* Sections - الكلام في المنتصف دائمًا */
 .section {
     padding: 120px 0;
     text-align: center;
@@ -149,11 +163,14 @@ h1, h2, h3 {
     margin-bottom: 60px;
 }
 
-/* Services */
+/* Services - الكروت في المنتصف */
 .services-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 40px;
+    justify-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .service-card {
@@ -162,13 +179,22 @@ h1, h2, h3 {
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
     transition: 0.3s;
+    max-width: 350px;
+    width: 100%;
 }
 
 .service-card:hover {
     transform: translateY(-10px);
 }
 
-/* Contact */
+/* Portfolio */
+.coming-soon {
+    font-size: 1.3rem;
+    margin-top: 40px;
+    color: #90EE90;
+}
+
+/* Contact - الفورم في المنتصف */
 .contact-form {
     max-width: 600px;
     margin: 0 auto 50px;
@@ -186,9 +212,8 @@ h1, h2, h3 {
     border-radius: 8px;
 }
 
-.contact-info p {
-    margin: 15px 0;
-    font-size: 1.1rem;
+.contact-info {
+    text-align: center;
 }
 
 /* Footer */
@@ -221,34 +246,4 @@ h1, h2, h3 {
     .nav-list.active { max-height: 400px; padding: 20px 0; }
     .hero h1 { font-size: 3rem; }
     .hero p { font-size: 1.5rem; }
-}
-
-/* Language Switcher - زر واحد أنيق */
-.language-switcher {
-    margin-left: 20px;
-}
-
-#lang-toggle {
-    background: rgba(255, 255, 255, 0.2);
-    border: 1px solid rgba(255, 255, 255, 0.4);
-    color: white;
-    padding: 10px 20px;
-    border-radius: 30px;
-    cursor: pointer;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    transition: all 0.3s ease;
-    backdrop-filter: blur(5px);
-}
-
-#lang-toggle:hover {
-    background: #90EE90;
-    color: #18342F;
-    border-color: #90EE90;
-}
-
-.lang-icon {
-    font-size: 1.2rem;
 }
