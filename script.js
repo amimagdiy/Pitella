@@ -1,27 +1,15 @@
-const toggleBtn = document.getElementById("langToggle");
-const htmlRoot = document.getElementById("htmlRoot");
-
-let currentLang = localStorage.getItem("lang") || "en";
-applyLanguage(currentLang);
-
-toggleBtn.addEventListener("click", () => {
-  currentLang = currentLang === "en" ? "ar" : "en";
-  localStorage.setItem("lang", currentLang);
-  applyLanguage(currentLang);
+// Smooth Scroll
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
 });
 
-function applyLanguage(lang){
-  document.querySelectorAll("[data-en]").forEach(el=>{
-    el.textContent = el.getAttribute(`data-${lang}`);
-  });
-
-  if(lang==="ar"){
-    htmlRoot.setAttribute("lang","ar");
-    htmlRoot.setAttribute("dir","rtl");
-    toggleBtn.textContent="EN";
-  }else{
-    htmlRoot.setAttribute("lang","en");
-    htmlRoot.setAttribute("dir","ltr");
-    toggleBtn.textContent="AR";
-  }
-}
+// Form Submit (مؤقت - هيطبع في الكونسول)
+document.querySelector('.contact-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert('تم إرسال الرسالة! (في النسخة النهائية هيروح للإيميل)');
+});
