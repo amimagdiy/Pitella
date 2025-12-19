@@ -255,6 +255,9 @@ footer {
 
 /* Responsive */
 @media (max-width: 992px) {
+  .nav-logo {
+  height: 40px;
+}
   .hamburger {
     display: block;
   }
