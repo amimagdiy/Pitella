@@ -137,7 +137,7 @@ body {
 /* الأقسام - مسافات أكبر بينهم */
 .section {
   max-width: 1100px;
-  margin: 120px auto; /* مسافة كبيرة من فوق وتحت */
+  margin: 100px auto; /* مسافة كبيرة من فوق وتحت */
   padding: 60px 20px;
   text-align: center;
 }
