@@ -23,7 +23,7 @@ body {
 /* القائمة العلوية */
 .navbar {
   background: var(--deep-green);
-  padding: 8px 18px;
+  padding: 5px 10px;
   position: fixed;
   top: 0;
   width: 100%;
