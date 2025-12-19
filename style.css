@@ -53,18 +53,18 @@ body {
   color: var(--light-green);
 }
 
-/* زر تغيير اللغة - أنيق داخل الـ navbar */
+/* زر تغيير اللغة */
 .lang-toggle {
   background: rgba(255,255,255,0.15);
   border: 1px solid rgba(255,255,255,0.3);
   color: var(--text-on-dark);
-  padding: 10px 20px;
+  padding: 12px 24px;
   border-radius: 30px;
   cursor: pointer;
   font-weight: bold;
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
   transition: 0.3s;
 }
 
@@ -74,15 +74,30 @@ body {
 }
 
 .lang-icon {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
-/* الهيرو مع خلفية hero-bg.jpg وتجنب التراكب */
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background: white;
+  margin: 6px 0;
+  transition: 0.3s;
+}
+
+/* الهيرو */
 .hero {
-  margin-top: 80px; /* ارتفاع الـ navbar عشان ما يتراكبش */
+  margin-top: 80px;
   background: url('hero-bg.jpg') center/cover no-repeat;
   color: var(--text-on-dark);
-  padding: 160px 20px;
+  padding: 200px 20px;
   text-align: center;
   position: relative;
 }
@@ -101,19 +116,18 @@ body {
 }
 
 .hero .logo {
-  height: 120px;
-  margin-bottom: 30px;
+  height: 180px; /* أكبر */
+  margin-bottom: 40px;
 }
 
 .hero h1 {
-  font-size: 52px;
-  margin-bottom: 20px;
+  font-size: 60px; /* أكبر */
+  margin-bottom: 30px;
 }
 
 .hero p {
-  margin: 20px 0 40px;
-  font-size: 20px;
-  opacity: 0.95;
+  font-size: 24px; /* أكبر */
+  margin: 30px 0 50px;
 }
 
 /* CTA */
@@ -121,11 +135,11 @@ body {
   background: var(--accent-green);
   color: var(--white);
   border: none;
-  padding: 16px 36px;
+  padding: 20px 50px;
   border-radius: 50px;
   cursor: pointer;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 20px;
   transition: 0.4s;
 }
 
@@ -135,10 +149,10 @@ body {
   box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
 
-/* الأقسام - كل النصوص في المنتصف وتجنب التراكب */
+/* الأقسام */
 .section {
   max-width: 1100px;
-  margin: 80px auto 0 auto; /* margin-top عشان ما يتراكبش تحت الـ navbar */
+  margin: 80px auto 0 auto;
   padding: 60px 20px;
   text-align: center;
 }
@@ -155,16 +169,17 @@ body {
 }
 
 .section h2 {
-  font-size: 36px;
+  font-size: 40px;
   margin-bottom: 50px;
 }
 
 .section p {
   max-width: 800px;
   margin: 0 auto 30px;
+  font-size: 18px;
 }
 
-/* الخدمات - في المنتصف */
+/* الخدمات */
 .services {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -186,7 +201,7 @@ body {
   box-shadow: 0 15px 30px rgba(0,0,0,0.15);
 }
 
-/* لماذا تختارنا - في المنتصف */
+/* لماذا تختارنا */
 .section ul {
   list-style: none;
   max-width: 700px;
@@ -197,7 +212,7 @@ body {
   margin-bottom: 20px;
   padding-right: 30px;
   position: relative;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
 .section ul li::before {
@@ -205,10 +220,10 @@ body {
   position: absolute;
   right: 0;
   color: var(--light-green);
-  font-size: 1.3rem;
+  font-size: 1.4rem;
 }
 
-/* المشاريع - في المنتصف */
+/* المشاريع */
 .projects {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -246,23 +261,48 @@ footer {
   font-size: 14px;
 }
 
-/* Responsive - تعديل خاص للموبايل عشان التراكب */
-@media (max-width: 768px) {
-  .hero {
-    margin-top: 70px; /* أقل شوية على الموبايل */
-    padding: 120px 20px;
+/* Responsive - قائمة منسدلة على الموبايل */
+@media (max-width: 992px) {
+  .hamburger {
+    display: block;
   }
 
-  .section {
-    margin: 70px auto 0 auto;
-    padding: 50px 20px;
+  .navbar ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: var(--deep-green);
+    flex-direction: column;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+  }
+
+  .navbar ul.active {
+    max-height: 500px;
+    padding: 20px 0;
+  }
+
+  .navbar ul li {
+    padding: 15px 0;
+    text-align: center;
+  }
+
+  .hero {
+    margin-top: 70px;
+    padding: 150px 20px;
+  }
+
+  .hero .logo {
+    height: 140px;
   }
 
   .hero h1 {
-    font-size: 42px;
+    font-size: 48px;
   }
 
   .hero p {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
