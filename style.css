@@ -241,7 +241,7 @@ body {
 /* الفوتر */
 footer {
   text-align: center;
-  padding: 80px;
+  padding: 100px;
   background: var(--deep-green);
   color: var(--text-on-dark);
   font-size: 14px;
