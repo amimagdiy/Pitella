@@ -1,7 +1,7 @@
 const toggleBtn = document.getElementById("langToggle");
 const htmlRoot = document.getElementById("htmlRoot");
 
-let currentLang = localStorage.getItem("lang") || "en";
+let currentLang = localStorage.getItem("lang") || "ar";
 applyLanguage(currentLang);
 
 toggleBtn.addEventListener("click", () => {
