@@ -20,15 +20,16 @@ function applyLanguage(lang){
   if(lang==="ar"){
     htmlRoot.setAttribute("lang","ar");
     htmlRoot.setAttribute("dir","rtl");
-    toggleBtn.querySelector(".lang-text").textContent = "EN";
-  }else{
+    toggleBtn.textContent="EN";
+  }else {
     htmlRoot.setAttribute("lang","en");
     htmlRoot.setAttribute("dir","ltr");
-    toggleBtn.querySelector(".lang-text").textContent = "AR";
+    toggleBtn.textContent="AR";
   }
 }
 
 // Hamburger Menu
 hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
   navList.classList.toggle("active");
 });
