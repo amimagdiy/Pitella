@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&family=Nova+Square&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
-    <link rel="icon" href="icon.png" type="image/png">
+    <link rel="icon" href="favicon.png" type="image/png">
 </head>
 <body>
 
@@ -81,14 +81,17 @@
         <div class="container">
             <h2 class="section-title">معرض الأعمال</h2>
             <div class="portfolio-grid">
-                <a href="project1-large.jpg" data-lightbox="projects" data-title="مشروع 1">
-                    <img src="project1.jpg" alt="مشروع 1">
+                <!-- ضيف صور مشاريعك هنا، أو placeholders مؤقتًا -->
+                <a href="https://source.unsplash.com/random/1200x900/?garden" data-lightbox="projects" data-title="مشروع 1">
+                    <img src="https://source.unsplash.com/random/800x600/?garden" alt="مشروع 1">
                 </a>
-                <!-- كرر للباقي -->
-                <a href="project2-large.jpg" data-lightbox="projects" data-title="مشروع 2">
-                    <img src="project2.jpg" alt="مشروع 2">
+                <a href="https://source.unsplash.com/random/1200x900/?landscape" data-lightbox="projects" data-title="مشروع 2">
+                    <img src="https://source.unsplash.com/random/800x600/?landscape" alt="مشروع 2">
                 </a>
-                <!-- أضف المزيد -->
+                <a href="https://source.unsplash.com/random/1200x900/?softscape" data-lightbox="projects" data-title="مشروع 3">
+                    <img src="https://source.unsplash.com/random/800x600/?softscape" alt="مشروع 3">
+                </a>
+                <!-- أضف المزيد عندما تكون جاهز -->
             </div>
             <p class="coming-soon">مشاريع مختارة قيد الإضافة قريبًا!</p>
         </div>
@@ -98,12 +101,12 @@
     <section id="contact" class="section dark fade-in">
         <div class="container">
             <h2 class="section-title">تواصل معنا</h2>
-            <form action="https://formspree.io/f/yourformid" method="POST" class="contact-form"> <!-- غير yourformid بـ ID من formspree.io (مجاني) -->
+            <form action="https://formspree.io/f/xbljwpjd" method="POST" class="contact-form"> <!-- استخدم الرابط ده أو سجل واحد مجاني على formspree.io -->
                 <input type="text" name="name" placeholder="اسمك" required>
                 <input type="tel" name="phone" placeholder="تليفونك" required>
                 <input type="email" name="email" placeholder="إيميلك" required>
                 <textarea name="message" placeholder="رسالتك" rows="5" required></textarea>
-                <button type="submit" class="btn primary">إرسال</button>
+                <button type="submit" class="btn primary">إرسال الرسالة</button>
             </form>
             <div class="contact-info">
                 <p>Email: pitellalandscape@gmail.com</p>
@@ -115,6 +118,7 @@
 
     <footer class="footer">
         <div class="container">
+            <img src="logo-white.png" alt="Pitella" class="footer-logo">
             <p>&copy; 2025 Pitella. جميع الحقوق محفوظة.</p>
         </div>
     </footer>
