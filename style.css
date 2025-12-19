@@ -6,6 +6,9 @@
   --cream: #F4EFE6;
   --white: #FFFFFF;
   --text-on-dark: #F4EFE6;
+    /* CTA Color */
+  --brown-red: #a03233;
+  --brown-red-hover: #87292a;
 }
 
 * {margin:0; padding:0; box-sizing:border-box}
@@ -117,19 +120,19 @@ body {
 
 /* CTA */
 .cta-btn {
-  background: var(--accent-green);
+  background: var(--brown-red);
   color: var(--white);
   border: none;
-  padding: 20px 50px;
+  padding: 20px 40px;
   border-radius: 50px;
   cursor: pointer;
-  font-weight: 600;
-  font-size: 20px;
+  font-weight: 700;
+  font-size: 30px;
   transition: 0.4s;
 }
 
 .cta-btn:hover {
-  background: #3a9d40;
+  background: #8C2C2E;
   transform: translateY(-5px);
   box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
