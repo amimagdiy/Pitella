@@ -1,11 +1,11 @@
 :root {
-  --deep-green: #18342F;
-  --dark-green: #1C2B26;
-  --light-green: #90EE90;
-  --accent-green: #4CAF50;
-  --cream: #F4EFE6;
+  --deep-green: #18342F;       /* خلفيات رئيسية */
+  --dark-green: #1C2B26;       /* نصوص على خلفية فاتحة */
+  --light-green: #90EE90;      /* تفاصيل بسيطة فقط */
+  --accent-green: #4CAF50;     /* CTA وأزرار */
+  --cream: #F4EFE6;            /* خلفيات ثانوية */
   --white: #FFFFFF;
-  --text-on-dark: #F4EFE6;
+  --text-on-dark: #F4EFE6;     /* نص على خلفية داكنة */
 }
 
 * {margin:0; padding:0; box-sizing:border-box}
@@ -81,15 +81,29 @@ body {
 .hamburger {
   display: none;
   cursor: pointer;
+  padding: 10px;
 }
 
 .hamburger span {
   display: block;
-  width: 30px;
-  height: 3px;
+  width: 35px;
+  height: 4px;
   background: white;
-  margin: 6px 0;
-  transition: 0.3s;
+  margin: 8px 0;
+  transition: 0.4s;
+  border-radius: 2px;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(10px, 10px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(10px, -10px);
 }
 
 /* الهيرو */
@@ -116,17 +130,17 @@ body {
 }
 
 .hero .logo {
-  height: 180px; /* أكبر */
+  height: 180px;
   margin-bottom: 40px;
 }
 
 .hero h1 {
-  font-size: 60px; /* أكبر */
+  font-size: 60px;
   margin-bottom: 30px;
 }
 
 .hero p {
-  font-size: 24px; /* أكبر */
+  font-size: 24px;
   margin: 30px 0 50px;
 }
 
@@ -261,7 +275,7 @@ footer {
   font-size: 14px;
 }
 
-/* Responsive - قائمة منسدلة على الموبايل */
+/* Responsive - قائمة منسدلة أفخم على الموبايل */
 @media (max-width: 992px) {
   .hamburger {
     display: block;
