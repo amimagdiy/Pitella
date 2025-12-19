@@ -10,21 +10,24 @@
 </head>
 <body>
 
-<!-- زر تغيير اللغة -->
-<button id="langToggle" class="lang-toggle">EN</button>
-
-<!-- القائمة العلوية -->
+<!-- القائمة العلوية مع زر اللغة داخلها -->
 <nav class="navbar">
-  <ul>
-    <li><a href="#about" data-en="About" data-ar="عن الشركة">عن الشركة</a></li>
-    <li><a href="#services" data-en="Services" data-ar="خدماتنا">خدماتنا</a></li>
-    <li><a href="#whyus" data-en="Why Us" data-ar="لماذا تختارنا">لماذا تختارنا</a></li>
-    <li><a href="#values" data-en="Values" data-ar="قيمنا">قيمنا</a></li>
-    <li><a href="#contact" data-en="Contact" data-ar="تواصل معنا">تواصل معنا</a></li>
-  </ul>
+  <div class="container navbar-container">
+    <button id="langToggle" class="lang-toggle">
+      <span class="lang-text">EN</span>
+      <span class="lang-icon">🌐</span>
+    </button>
+    <ul>
+      <li><a href="#about" data-en="About" data-ar="عن الشركة">عن الشركة</a></li>
+      <li><a href="#services" data-en="Services" data-ar="خدماتنا">خدماتنا</a></li>
+      <li><a href="#whyus" data-en="Why Us" data-ar="لماذا تختارنا">لماذا تختارنا</a></li>
+      <li><a href="#values" data-en="Values" data-ar="قيمنا">قيمنا</a></li>
+      <li><a href="#contact" data-en="Contact" data-ar="تواصل معنا">تواصل معنا</a></li>
+    </ul>
+  </div>
 </nav>
 
-<!-- الهيرو -->
+<!-- الهيرو مع خلفية hero-bg.jpg -->
 <header class="hero">
   <img src="logo-full.png" alt="Pitella Logo" class="logo">
   <h1 data-en="Pitella" data-ar="بتلة">بتلة</h1>
