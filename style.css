@@ -259,6 +259,11 @@ footer {
 
 /* Responsive */
 @media (max-width: 992px) {
+
+    .navbar {
+    padding: 6px 16px;
+  }
+  
   .nav-logo {
   height: 100px;
 }
