@@ -80,7 +80,7 @@ body {
 /* الهيرو */
 .hero {
   margin-top: 80px;
-  background: url('hero-bg.jpg') center/cover no-repeat;
+  background: url('hero-bg.png') center/cover no-repeat;
   color: var(--text-on-dark);
   padding: 200px 20px;
   text-align: center;
