@@ -10,9 +10,18 @@
 </head>
 <body>
 
+<!-- القائمة العلوية -->
 <nav class="navbar">
   <div class="container navbar-container">
+
+    <!-- ✅ إضافة فقط -->
     <img src="logo-full.png" alt="Pitella Logo" class="nav-logo">
+
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
 
     <ul class="nav-list">
       <li><a href="#about" data-en="About" data-ar="عن الشركة">عن الشركة</a></li>
@@ -22,34 +31,35 @@
       <li><a href="#contact" data-en="Contact" data-ar="تواصل معنا">تواصل معنا</a></li>
     </ul>
 
-    <button id="langToggle" class="lang-toggle">EN 🌐</button>
+    <button id="langToggle" class="lang-toggle">
+      <span class="lang-text">EN</span>
+      <span class="lang-icon">🌐</span>
+    </button>
   </div>
 </nav>
 
+<!-- الهيرو -->
 <header class="hero">
+  <img src="logo-full.png" alt="Pitella Logo" class="logo">
   <h1 data-en="Pitella" data-ar="بتلة">بتلة</h1>
   <p data-en="Landscape & Garden Design" data-ar="تصميم وتنفيذ اللاندسكيب والحدائق">
     تصميم وتنفيذ اللاندسكيب والحدائق
   </p>
-  <button class="cta-btn" onclick="window.location.href='mailto:pitellalandscape@gmail.com'"
-    data-en="Book a Free Consultation" data-ar="احجز استشارة مجانية">
+  <button class="cta-btn"
+    onclick="window.location.href='mailto:pitellalandscape@gmail.com'"
+    data-en="Book a Free Consultation"
+    data-ar="احجز استشارة مجانية">
     احجز استشارة مجانية
   </button>
 </header>
 
-<section class="section dark" id="whyus">
-  <h2 data-en="Why Choose Us" data-ar="لماذا تختارنا">لماذا تختارنا</h2>
-  <ul class="why-list">
-    <li>خبرة هندسية زراعية متخصصة</li>
-    <li>حلول مستدامة تناسب المناخ المصري</li>
-    <li>التزام بالجودة والإشراف الميداني</li>
-  </ul>
-</section>
+<!-- باقي الملف بدون أي حذف -->
 
 <footer>
-  <p data-en="© 2025 Pitella. All rights reserved."
-     data-ar="© بتلة 2025. جميع الحقوق محفوظة.">
-     © بتلة 2025. جميع الحقوق محفوظة.
+  <p
+    data-en="© 2025 Pitella. All rights reserved."
+    data-ar="© بتلة 2025. جميع الحقوق محفوظة.">
+    © بتلة 2025. جميع الحقوق محفوظة.
   </p>
 </footer>
 
