@@ -1,129 +1,92 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en" dir="ltr" id="htmlRoot">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pitella - Landscape & Garden Design</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&family=Nova+Square&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
-    <link rel="icon" href="favicon.png" type="image/png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pitella | Landscape & Garden Design</title>
+
+  <!-- FAVICON -->
+  <link rel="icon" type="image/png" href="favicon.png?v=12">
+
+  <!-- FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <!-- Header -->
-    <header class="header">
-        <div class="container">
-            <img src="logo-full.png" alt="Pitella Logo" class="logo">
-            <nav class="nav">
-                <ul class="nav-list">
-                    <li><a href="#home">الرئيسية</a></li>
-                    <li><a href="#about">عن Pitella</a></li>
-                    <li><a href="#services">الخدمات</a></li>
-                    <li><a href="#projects">معرض الأعمال</a></li>
-                    <li><a href="#contact">تواصل معنا</a></li>
-                </ul>
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </nav>
-        </div>
-    </header>
+<button id="langToggle" class="lang-toggle">AR</button>
 
-    <!-- Hero -->
-    <section id="home" class="hero">
-        <div class="hero-overlay"></div>
-        <div class="container hero-content">
-            <h1 class="fade-in">نصمم وننفذ مساحات خضراء مستدامة</h1>
-            <p class="fade-in">Pitella - متخصصون في Softscape وتنسيق الحدائق في مصر</p>
-            <a href="#contact" class="btn primary fade-in">احجز استشارة</a>
-        </div>
-    </section>
+<header class="hero">
+  <h1 data-en="Pitella" data-ar="بتلة">Pitella</h1>
+  <p data-en="Landscape & Garden Design" data-ar="تصميم وتنفيذ اللاندسكيب والحدائق">
+    Landscape & Garden Design
+  </p>
+</header>
 
-    <!-- About -->
-    <section id="about" class="section fade-in">
-        <div class="container">
-            <h2 class="section-title">عن Pitella</h2>
-            <p>Pitella هي شركة تصميم لاندسكيب وحدائق مقرها في القاهرة، مصر. نصمم وننفذ مساحات خارجية أنيقة مستوحاة من الطبيعة، مع التركيز على الاستدامة والمناخ المصري.</p>
-            <p>يدير الشركة مهندس زراعي ذو خبرة، ونبدأ من الصفر لنبني حدائق أحلامك.</p>
-        </div>
-    </section>
+<!-- About Us -->
+<section class="section">
+  <h2 data-en="About Us" data-ar="عن الشركة">About Us</h2>
+  <p
+    data-en="We are a landscape engineering company dedicated to creating sustainable and elegant outdoor spaces."
+    data-ar="نحن شركة هندسة لاندسكيب متخصصة في تصميم مساحات خارجية مستدامة وأنيقة.">
+    We are a landscape engineering company dedicated to creating sustainable and elegant outdoor spaces.
+  </p>
+</section>
 
-    <!-- Services -->
-    <section id="services" class="section bg-light fade-in">
-        <div class="container">
-            <h2 class="section-title">خدماتنا</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <h3>تصميم Softscape</h3>
-                    <p>تصميم وتخطيط مساحات خضراء طبيعية ومستدامة.</p>
-                </div>
-                <div class="service-card">
-                    <h3>تنفيذ وإشراف</h3>
-                    <p>تنفيذ كامل للمشاريع مع إشراف ميداني دقيق.</p>
-                </div>
-                <div class="service-card">
-                    <h3>اختيار النباتات</h3>
-                    <p>اختيار دقيق للنباتات المناسبة للمناخ والتصميم.</p>
-                </div>
-                <div class="service-card">
-                    <h3>الصيانة الدورية</h3>
-                    <p>ري اتوماتيكي وصيانة دورية للحفاظ على الجمال.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- Services -->
+<section class="section light">
+  <h2 data-en="Our Services" data-ar="خدماتنا">Our Services</h2>
+  <div class="services">
+    <div class="service-box">
+      <h3 data-en="Landscape Design" data-ar="تصميم اللاندسكيب">Landscape Design</h3>
+      <p data-en="Creative outdoor design solutions." data-ar="حلول تصميم مبتكرة للمساحات الخارجية.">
+        Creative outdoor design solutions.
+      </p>
+    </div>
+    <div class="service-box">
+      <h3 data-en="Smart Irrigation" data-ar="الري الذكي">Smart Irrigation</h3>
+      <p data-en="Efficient irrigation systems tailored to your garden." data-ar="أنظمة ري ذكية تناسب حديقتك.">
+        Efficient irrigation systems tailored to your garden.
+      </p>
+    </div>
+    <div class="service-box">
+      <h3 data-en="Plant Selection" data-ar="اختيار النباتات">Plant Selection</h3>
+      <p data-en="Careful selection of plants suitable for climate and design." data-ar="اختيار نباتات مناسبة للمناخ والتصميم.">
+        Careful selection of plants suitable for climate and design.
+      </p>
+    </div>
+  </div>
+</section>
 
-    <!-- Portfolio -->
-    <section id="projects" class="section fade-in">
-        <div class="container">
-            <h2 class="section-title">معرض الأعمال</h2>
-            <div class="portfolio-grid">
-                <!-- ضيف صور مشاريعك هنا، أو placeholders مؤقتًا -->
-                <a href="https://source.unsplash.com/random/1200x900/?garden" data-lightbox="projects" data-title="مشروع 1">
-                    <img src="https://source.unsplash.com/random/800x600/?garden" alt="مشروع 1">
-                </a>
-                <a href="https://source.unsplash.com/random/1200x900/?landscape" data-lightbox="projects" data-title="مشروع 2">
-                    <img src="https://source.unsplash.com/random/800x600/?landscape" alt="مشروع 2">
-                </a>
-                <a href="https://source.unsplash.com/random/1200x900/?softscape" data-lightbox="projects" data-title="مشروع 3">
-                    <img src="https://source.unsplash.com/random/800x600/?softscape" alt="مشروع 3">
-                </a>
-                <!-- أضف المزيد عندما تكون جاهز -->
-            </div>
-            <p class="coming-soon">مشاريع مختارة قيد الإضافة قريبًا!</p>
-        </div>
-    </section>
+<!-- Why Us -->
+<section class="section dark">
+  <h2 data-en="Why Choose Us" data-ar="لماذا تختارنا">Why Choose Us</h2>
+  <ul>
+    <li data-en="Expert agricultural engineering" data-ar="خبرة هندسية زراعية متخصصة">Expert agricultural engineering</li>
+    <li data-en="Sustainable solutions for Egyptian climate" data-ar="حلول مستدامة تناسب المناخ المصري">Sustainable solutions for Egyptian climate</li>
+    <li data-en="Commitment to quality and supervision" data-ar="التزام بالجودة والإشراف الميداني">Commitment to quality and supervision</li>
+  </ul>
+</section>
 
-    <!-- Contact -->
-    <section id="contact" class="section dark fade-in">
-        <div class="container">
-            <h2 class="section-title">تواصل معنا</h2>
-            <form action="https://formspree.io/f/xbljwpjd" method="POST" class="contact-form"> <!-- استخدم الرابط ده أو سجل واحد مجاني على formspree.io -->
-                <input type="text" name="name" placeholder="اسمك" required>
-                <input type="tel" name="phone" placeholder="تليفونك" required>
-                <input type="email" name="email" placeholder="إيميلك" required>
-                <textarea name="message" placeholder="رسالتك" rows="5" required></textarea>
-                <button type="submit" class="btn primary">إرسال الرسالة</button>
-            </form>
-            <div class="contact-info">
-                <p>Email: pitellalandscape@gmail.com</p>
-                <p>Phone: +20 110 180 6796</p>
-                <p>Nasr City, Cairo, Egypt</p>
-            </div>
-        </div>
-    </section>
+<!-- Contact -->
+<section class="section dark">
+  <h2 data-en="Contact Us" data-ar="تواصل معنا">Contact Us</h2>
+  <p data-en="Let’s create beautiful outdoor spaces together." data-ar="دعنا نصمم مساحات خارجية جميلة معًا.">
+    Let’s create beautiful outdoor spaces together.
+  </p>
+  <p>Email: pitellalandscape@gmail.com</p>
+  <p>Phone: +20 110 180 6796</p>
+  <p data-en="Nasr City, Cairo, Egypt" data-ar="مدينة نصر، القاهرة، مصر">
+    Nasr City, Cairo, Egypt
+  </p>
+  <button class="cta-btn" data-en="Book a Consultation" data-ar="احجز استشارة">Book a Consultation</button>
+</section>
 
-    <footer class="footer">
-        <div class="container">
-            <img src="logo-white.png" alt="Pitella" class="footer-logo">
-            <p>&copy; 2025 Pitella. جميع الحقوق محفوظة.</p>
-        </div>
-    </footer>
+<footer>© 2025 Pitella | All Rights Reserved</footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
