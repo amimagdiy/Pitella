@@ -59,7 +59,7 @@ body {
   border: 1px solid rgba(255,255,255,0.3);
   color: var(--text-on-dark);
   padding: 12px 24px;
-  border-radius: 30px;
+  border-radius: 25px;
   cursor: pointer;
   font-weight: bold;
   display: flex;
@@ -69,17 +69,17 @@ body {
 }
 
 .lang-toggle:hover {
-  background: var(--light-green);
+  background: var(-- Brown Red);
   color: var(--deep-green);
 }
 
 .lang-icon {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
 }
 
 /* الهيرو */
 .hero {
-  margin-top: 80px;
+  margin-top: 65px;
   background: url('hero-bg.png') center/cover no-repeat;
   color: var(--text-on-dark);
   padding: 200px 20px;
@@ -101,8 +101,8 @@ body {
 }
 
 .hero .logo {
-  height: 180px;
-  margin-bottom: 40px;
+  height: 300px;
+  margin-bottom: 80px;
 }
 
 .hero h1 {
