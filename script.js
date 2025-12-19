@@ -1,27 +1,31 @@
-const toggleBtn = document.getElementById("langToggle");
-const htmlRoot = document.getElementById("htmlRoot");
+// Language Switcher
+const langAr = document.getElementById('lang-ar');
+const langEn = document.getElementById('lang-en');
+const translatable = document.querySelectorAll('[data-ar][data-en]');
+const placeholders = document.querySelectorAll('[data-en-placeholder]');
 
-let currentLang = localStorage.getItem("lang") || "en";
-applyLanguage(currentLang);
-
-toggleBtn.addEventListener("click", () => {
-  currentLang = currentLang === "en" ? "ar" : "en";
-  localStorage.setItem("lang", currentLang);
-  applyLanguage(currentLang);
+langAr.addEventListener('click', () => {
+    translatable.forEach(el => el.textContent = el.dataset.ar);
+    placeholders.forEach(el => el.placeholder = el.getAttribute('placeholder'));
+    document.documentElement.lang = 'ar';
+    document.documentElement.dir = 'rtl';
+    langAr.classList.add('active');
+    langEn.classList.remove('active');
 });
 
-function applyLanguage(lang){
-  document.querySelectorAll("[data-en]").forEach(el=>{
-    el.textContent = el.getAttribute(`data-${lang}`);
-  });
+langEn.addEventListener('click', () => {
+    translatable.forEach(el => el.textContent = el.dataset.en);
+    placeholders.forEach(el => el.placeholder = el.dataset.enPlaceholder || el.placeholder);
+    document.documentElement.lang = 'en';
+    document.documentElement.dir = 'ltr';
+    langEn.classList.add('active');
+    langAr.classList.remove('active');
+});
 
-  if(lang==="ar"){
-    htmlRoot.setAttribute("lang","ar");
-    htmlRoot.setAttribute("dir","rtl");
-    toggleBtn.textContent="EN";
-  }else{
-    htmlRoot.setAttribute("lang","en");
-    htmlRoot.setAttribute("dir","ltr");
-    toggleBtn.textContent="AR";
-  }
-}
+// Hamburger
+document.querySelector('.hamburger').addEventListener('click', () => {
+    document.querySelector('.nav-list').classList.toggle('active');
+});
+
+// Default Arabic
+langAr.click();
