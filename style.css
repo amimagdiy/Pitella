@@ -222,3 +222,33 @@ h1, h2, h3 {
     .hero h1 { font-size: 3rem; }
     .hero p { font-size: 1.5rem; }
 }
+
+/* Language Switcher - زر واحد أنيق */
+.language-switcher {
+    margin-left: 20px;
+}
+
+#lang-toggle {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+}
+
+#lang-toggle:hover {
+    background: #90EE90;
+    color: #18342F;
+    border-color: #90EE90;
+}
+
+.lang-icon {
+    font-size: 1.2rem;
+}
