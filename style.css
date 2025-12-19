@@ -77,9 +77,9 @@ body {
   font-size: 1.2rem;
 }
 
-/* الهيرو مع خلفية hero-bg.jpg */
+/* الهيرو مع خلفية hero-bg.jpg وتجنب التراكب */
 .hero {
-  margin-top: 80px;
+  margin-top: 80px; /* ارتفاع الـ navbar عشان ما يتراكبش */
   background: url('hero-bg.jpg') center/cover no-repeat;
   color: var(--text-on-dark);
   padding: 160px 20px;
@@ -135,10 +135,10 @@ body {
   box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
 
-/* الأقسام - كل النصوص في المنتصف */
+/* الأقسام - كل النصوص في المنتصف وتجنب التراكب */
 .section {
   max-width: 1100px;
-  margin: 80px auto;
+  margin: 80px auto 0 auto; /* margin-top عشان ما يتراكبش تحت الـ navbar */
   padding: 60px 20px;
   text-align: center;
 }
@@ -244,4 +244,25 @@ footer {
   background: var(--deep-green);
   color: var(--text-on-dark);
   font-size: 14px;
+}
+
+/* Responsive - تعديل خاص للموبايل عشان التراكب */
+@media (max-width: 768px) {
+  .hero {
+    margin-top: 70px; /* أقل شوية على الموبايل */
+    padding: 120px 20px;
+  }
+
+  .section {
+    margin: 70px auto 0 auto;
+    padding: 50px 20px;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
 }
