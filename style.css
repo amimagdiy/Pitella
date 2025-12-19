@@ -297,6 +297,6 @@ footer {
   }
 
   .section.dark {
-    margin-bottom: 100px !important; /* مسافة أقل على الموبايل عشان ما يبقاش فارغ كتير */
+    margin-bottom: 110px !important; /* مسافة أقل على الموبايل عشان ما يبقاش فارغ كتير */
   }
 }
