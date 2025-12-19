@@ -53,7 +53,7 @@ body {
   color: var(--light-green);
 }
 
-/* زر تغيير اللغة - أنيق أكتر مع أيقونة */
+/* زر تغيير اللغة */
 .lang-toggle {
   background: rgba(255,255,255,0.15);
   border: 1px solid rgba(255,255,255,0.3);
@@ -77,12 +77,12 @@ body {
   font-size: 1.4rem;
 }
 
-/* الهيرو - مسافات أكبر وخلفية hero-bg.jpg */
+/* الهيرو */
 .hero {
   margin-top: 80px;
   background: url('hero-bg.jpg') center/cover no-repeat;
   color: var(--text-on-dark);
-  padding: 220px 20px;
+  padding: 200px 20px;
   text-align: center;
   position: relative;
 }
@@ -101,45 +101,44 @@ body {
 }
 
 .hero .logo {
-  height: 200px; /* أكبر */
-  margin-bottom: 50px;
+  height: 180px;
+  margin-bottom: 40px;
 }
 
 .hero h1 {
-  font-size: 64px;
+  font-size: 60px;
   margin-bottom: 30px;
 }
 
 .hero p {
-  font-size: 26px;
-  margin: 30px 0 60px;
+  font-size: 24px;
+  margin: 30px 0 50px;
 }
 
-/* CTA - أقوى */
+/* CTA */
 .cta-btn {
   background: var(--accent-green);
   color: var(--white);
   border: none;
-  padding: 22px 60px;
-  border-radius: 60px;
+  padding: 20px 50px;
+  border-radius: 50px;
   cursor: pointer;
   font-weight: 600;
-  font-size: 22px;
+  font-size: 20px;
   transition: 0.4s;
-  box-shadow: 0 10px 30px rgba(76, 175, 80, 0.4);
 }
 
 .cta-btn:hover {
   background: #3a9d40;
-  transform: translateY(-8px);
-  box-shadow: 0 20px 40px rgba(76, 175, 80, 0.6);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
 
 /* الأقسام - مسافات أكبر بينهم */
 .section {
   max-width: 1100px;
-  margin: 120px auto; /* مسافة أكبر من فوق وتحت */
-  padding: 80px 20px;
+  margin: 120px auto; /* مسافة كبيرة من فوق وتحت */
+  padding: 60px 20px;
   text-align: center;
 }
 
@@ -152,53 +151,54 @@ body {
   background: var(--deep-green);
   color: var(--text-on-dark);
   border-radius: 30px;
+  margin-bottom: 160px !important; /* مسافة كبيرة تحت القسم الداكن عشان ما يلزقش في الفوتر */
 }
 
 .section h2 {
-  font-size: 42px;
-  margin-bottom: 60px;
+  font-size: 40px;
+  margin-bottom: 50px;
 }
 
 .section p {
   max-width: 800px;
-  margin: 0 auto 40px;
-  font-size: 19px;
+  margin: 0 auto 30px;
+  font-size: 18px;
 }
 
-/* الخدمات - مسافات أكبر */
+/* الخدمات */
 .services {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 60px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 40px;
   justify-items: center;
 }
 
 .service-box {
   background: var(--cream);
-  padding: 50px;
-  border-radius: 30px;
-  transition: .5s;
-  max-width: 400px;
+  padding: 40px;
+  border-radius: 25px;
+  transition: .4s;
+  max-width: 380px;
   width: 100%;
 }
 
 .service-box:hover {
-  transform: translateY(-15px);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
 }
 
 /* لماذا تختارنا */
 .section ul {
   list-style: none;
-  max-width: 800px;
+  max-width: 700px;
   margin: 0 auto;
 }
 
 .section ul li {
-  margin-bottom: 30px;
-  padding-right: 40px;
+  margin-bottom: 20px;
+  padding-right: 30px;
   position: relative;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 .section ul li::before {
@@ -206,37 +206,36 @@ body {
   position: absolute;
   right: 0;
   color: var(--light-green);
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 
 /* المشاريع */
 .projects {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 60px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
   justify-items: center;
 }
 
 .project {
   background: var(--white);
-  border-radius: 25px;
+  border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
   text-align: center;
-  max-width: 420px;
+  max-width: 380px;
   width: 100%;
 }
 
 .project img {
   width: 100%;
-  height: 280px;
+  height: 250px;
   object-fit: cover;
 }
 
 .project p {
-  padding: 25px;
+  padding: 20px;
   font-weight: 600;
-  font-size: 1.2rem;
 }
 
 /* الفوتر */
@@ -245,7 +244,7 @@ footer {
   padding: 80px;
   background: var(--deep-green);
   color: var(--text-on-dark);
-  font-size: 15px;
+  font-size: 14px;
 }
 
 /* Responsive */
@@ -263,43 +262,41 @@ footer {
     flex-direction: column;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.6s ease;
+    transition: max-height 0.5s ease;
   }
 
   .navbar ul.active {
-    max-height: 600px;
-    padding: 40px 0;
+    max-height: 500px;
+    padding: 20px 0;
   }
 
   .navbar ul li {
-    padding: 25px 0;
+    padding: 15px 0;
     text-align: center;
-    font-size: 1.4rem;
   }
 
   .hero {
     margin-top: 70px;
-    padding: 180px 20px;
+    padding: 150px 20px;
   }
 
   .hero .logo {
-    height: 160px;
+    height: 140px;
   }
 
   .hero h1 {
-    font-size: 52px;
+    font-size: 48px;
   }
 
   .hero p {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   .section {
     margin: 100px auto;
-    padding: 60px 20px;
   }
 
-  .section h2 {
-    font-size: 38px;
+  .section.dark {
+    margin-bottom: 120px !important; /* مسافة أقل على الموبايل عشان ما يبقاش فارغ كتير */
   }
 }
