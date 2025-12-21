@@ -61,6 +61,26 @@ body {
   font-weight: 500;
 }
 
+.lang-toggle {
+  background: rgba(255,255,255,0.15);
+  border: 1px solid rgba(255,255,255,0.35);
+  color: var(--text-on-dark);
+  padding: 10px 22px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: 0.3s ease;
+}
+
+.lang-toggle:hover {
+  background: var(--light-green);
+  color: var(--deep-green);
+}
+
 /* Hero */
 .hero {
   min-height: 100vh;
