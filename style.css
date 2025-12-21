@@ -89,7 +89,6 @@ body {
   text-align: center;
   padding: 180px 20px;
   color: var(--text-on-dark);
-  
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -133,13 +132,15 @@ body {
 }
 
 .hero-brand {
+  font-family: 'Nova Square', cursive;
   display: block;
-  font-size: 50px;        
-  font-weight: 700;
-  letter-spacing: 1px;   
+  font-size: 42px;
+  letter-spacing: 2px;
   margin-bottom: 18px;
   opacity: 0.95;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.3);
 }
+
 
 
 .cta-btn {
@@ -244,7 +245,7 @@ footer {
 
   .hero-brand {
     font-size: 36px;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
   }
 
   .hero h1 {
