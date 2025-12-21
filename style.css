@@ -31,8 +31,8 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 600;
   height: 80px;
+  z-index: 9999;
   transition: background 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -124,6 +124,7 @@ body {
   position: relative;
   min-height: 100vh;
   padding: 180px 20px 120px;
+  
 }
 
 .hero::before {
