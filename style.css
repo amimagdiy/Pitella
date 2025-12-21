@@ -23,11 +23,12 @@ body {
 /* القائمة العلوية */
 .navbar {
   background: var(--deep-green);
-  padding: -10px -20px;
+  padding: 0px 20px;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 600;
+  height: 80px;
 }
 
 .navbar-container {
@@ -36,6 +37,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 100%;
 }
 
 .nav-list {
@@ -250,8 +252,10 @@ footer {
   font-size: 16px;
 }
 .nav-logo {
-  height: 100px;
+  max-height: 150px;
+  width: auto;
   object-fit: contain;
+}
 
 /* Responsive */
 @media (max-width: 992px) {
