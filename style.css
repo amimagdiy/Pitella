@@ -112,6 +112,15 @@ body {
   margin-bottom: 50px;
 }
 
+/* وصف الهيرو */
+.hero-desc {
+  max-width: 850px;
+  margin: 0 auto 50px;
+  font-size: 20px;
+  line-height: 1.8;
+  opacity: 0.95;
+}
+
 .cta-btn {
   background: var(--cta);
   color: var(--white);
