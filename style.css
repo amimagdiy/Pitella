@@ -32,13 +32,20 @@ body {
   top: 0;
   width: 100%;
   z-index: 600;
-  height: 100px;
+  height: 80px;
   transition: background 0.3s ease, box-shadow 0.3s ease;
 }
 
 .navbar.scrolled {
-  background: var(--deep-green);   /* يظهر بعد السكرول */
-  box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+  background: rgba(24, 52, 47, 0.95);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  height: 70px;
+  
+}
+
+.navbar.scrolled .nav-logo {
+  max-height: 50px;
 }
 
 .navbar-container {
@@ -74,6 +81,15 @@ body {
   color: var(--light-green);
 }
 
+}
+.nav-logo {
+  max-height: 60px;
+  width: auto;
+  object-fit: contain;
+}
+
+
+
 
 /* زر تغيير اللغة */
 .lang-toggle {
@@ -91,7 +107,7 @@ body {
 }
 
 .lang-toggle:hover {
-  background: var(-- Brown Red);
+  background: var(-- brown Red);
   color: var(--deep-green);
 }
 
@@ -104,10 +120,10 @@ body {
   margin-top: 0px;
   background: url('hero-bg.png') center/cover no-repeat;
   color: var(--text-on-dark);
-  padding: 200px 20px;
   text-align: center;
   position: relative;
-  padding-top: calc(200px + 100px);
+  min-height: 100vh;
+  padding: 180px 20px 120px;
 }
 
 .hero::before {
@@ -264,22 +280,17 @@ footer {
   background: var(--deep-green);
   color: var(--text-on-dark);
   font-size: 16px;
-}
-.nav-logo {
-  max-height: 150px;
-  width: auto;
-  object-fit: contain;
-}
 
 /* Responsive */
 @media (max-width: 992px) {
 
     .navbar {
     padding: 6px 16px;
+    height: 70px;
   }
   
   .nav-logo {
-  height: 100px;
+  height: 50px;
 }
   .hamburger {
     display: block;
@@ -308,8 +319,8 @@ footer {
   }
 
   .hero {
-    margin-top: 70px;
-    padding: 150px 20px;
+  margin-top: 0;
+  padding: 230px 20px 150px;
   }
 
   .hero .logo {
