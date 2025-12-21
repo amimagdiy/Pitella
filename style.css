@@ -20,15 +20,25 @@ body {
   line-height:2;
 }
 
+body {
+  padding-top: 0px;
+}
+
 /* القائمة العلوية */
 .navbar {
-  background: var(--deep-green);
+  background: transparent;
   padding: 0px 20px;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 600;
-  height: 80px;
+  height: 100px;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar.scrolled {
+  background: var(--deep-green);   /* يظهر بعد السكرول */
+  box-shadow: 0 2px 10px rgba(0,0,0,0.15);
 }
 
 .navbar-container {
@@ -64,10 +74,6 @@ body {
   color: var(--light-green);
 }
 
-body {
-  padding-top: 80px;
-}
-
 
 /* زر تغيير اللغة */
 .lang-toggle {
@@ -95,12 +101,13 @@ body {
 
 /* الهيرو */
 .hero {
-  margin-top: 65px;
+  margin-top: 0px;
   background: url('hero-bg.png') center/cover no-repeat;
   color: var(--text-on-dark);
   padding: 200px 20px;
   text-align: center;
   position: relative;
+  padding-top: calc(200px + 100px);
 }
 
 .hero::before {
