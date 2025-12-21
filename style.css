@@ -89,6 +89,10 @@ body {
   text-align: center;
   padding: 180px 20px;
   color: var(--text-on-dark);
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .hero::before {
@@ -119,6 +123,14 @@ body {
   font-size: 20px;
   line-height: 1.8;
   opacity: 0.95;
+}
+.hero-brand {
+  display: block;
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  opacity: 0.85;
+  margin-bottom: 20px;
 }
 
 .cta-btn {
@@ -233,7 +245,20 @@ footer {
 }
 
 @media (max-width: 768px) {
-  .hamburger {
-    display: flex;
+  .hero {
+    padding: 140px 20px;
+  }
+
+  .hero h1 {
+    font-size: 38px;
+  }
+
+  .hero-desc {
+    font-size: 18px;
+  }
+
+  .hero-brand {
+    font-size: 15px;
+    letter-spacing: 1.5px;
   }
 }
