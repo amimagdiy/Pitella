@@ -17,13 +17,13 @@ body {
   font-family:'Comfortaa', sans-serif;
   background: var(--cream);
   color: var(--dark-green);
-  line-height:1.5;
+  line-height:2;
 }
 
 /* القائمة العلوية */
 .navbar {
   background: var(--deep-green);
-  padding: 5px 10px;
+  padding: -10px -20px;
   position: fixed;
   top: 0;
   width: 100%;
@@ -105,11 +105,7 @@ body {
 .hero * {
   position: relative;
   z-index: 2;
-}
 
-.hero .logo {
-  height: 300px;
-  margin-bottom: 80px;
 }
 
 .hero h1 {
