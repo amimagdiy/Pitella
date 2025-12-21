@@ -212,7 +212,7 @@ footer {
   }
 
   .nav-logo {
-    height: 45px;
+    height: 80px;
   }
 
   .hamburger {
@@ -243,12 +243,12 @@ footer {
   }
 
   .hero-brand {
-    font-size: 20px;
+    font-size: 36px;
     letter-spacing: 1px;
   }
 
   .hero h1 {
-    font-size: 36px;
+    font-size: 30px;
   }
 
   .hero-desc {
