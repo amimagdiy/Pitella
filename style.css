@@ -93,6 +93,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .hero::before {
@@ -145,6 +146,7 @@ body {
   font-size: 18px;           /* تحكم صريح */
   display: inline-block;
   transition: 0.3s ease;
+  margin-top: 10px;
 }
 .cta-btn:hover {
   transform: translateY(-2px);
@@ -192,8 +194,12 @@ footer {
   text-align: center;
   padding: 60px;
 }
+/* ======================
+   Mobile (≤ 768px)
+====================== */
 @media (max-width: 768px) {
 
+  /* Navbar */
   .navbar {
     height: 70px;
     padding: 0 15px;
@@ -203,12 +209,16 @@ footer {
     height: 45px;
   }
 
+  .hamburger {
+    display: flex;
+  }
+
   .nav-list {
     position: absolute;
     top: 70px;
     right: 0;
-    background: rgba(24,52,47,.97);
     width: 100%;
+    background: rgba(24,52,47,.97);
     flex-direction: column;
     gap: 20px;
     padding: 30px 0;
@@ -219,61 +229,33 @@ footer {
     display: flex;
   }
 
+  /* Hero */
   .hero {
     padding: 140px 20px 100px;
   }
 
-  .hero h1 {
-    font-size: 38px;
-  }
-
-  .hero p {
-    font-size: 18px;
-  }
-
-  .cta-btn {
-    font-size: 18px;
-    padding: 15px 30px;
-  }
-
-  .section {
-    margin: 70px auto;
-  }
-}
-.hamburger {
-  display: none;
-  flex-direction: column;
-  gap: 6px;
-  cursor: pointer;
-}
-
-.hamburger span {
-  width: 26px;
-  height: 3px;
-  background: #fff;
-}
-
-@media (max-width: 768px) {
-  
-  .hero {
-    padding: 140px 20px;
+  .hero-brand {
+    font-size: 20px;
+    letter-spacing: 1px;
   }
 
   .hero h1 {
-    font-size: 38px;
+    font-size: 36px;
   }
 
   .hero-desc {
     font-size: 18px;
   }
 
-  .hero-brand {
-    font-size: 20px;
-    letter-spacing: 1.5px;
-  }
-    .cta-btn {
+  /* CTA Button */
+  .cta-btn {
     font-size: 16px;
     padding: 12px 26px;
   }
 
+  /* Sections */
+  .section {
+    margin: 70px auto;
+  }
 }
+
