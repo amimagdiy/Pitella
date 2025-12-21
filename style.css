@@ -124,14 +124,16 @@ body {
   line-height: 1.8;
   opacity: 0.95;
 }
+
 .hero-brand {
   display: block;
-  font-size: 18px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  opacity: 0.85;
-  margin-bottom: 20px;
+  font-size: 26px;        
+  font-weight: 600;
+  letter-spacing: 1px;   
+  margin-bottom: 18px;
+  opacity: 0.95;
 }
+
 
 .cta-btn {
   background: var(--cta);
@@ -266,7 +268,7 @@ footer {
   }
 
   .hero-brand {
-    font-size: 15px;
+    font-size: 20px;
     letter-spacing: 1.5px;
   }
     .cta-btn {
