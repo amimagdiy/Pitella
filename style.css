@@ -142,3 +142,51 @@ footer {
   text-align: center;
   padding: 60px;
 }
+@media (max-width: 768px) {
+
+  .navbar {
+    height: 70px;
+    padding: 0 15px;
+  }
+
+  .nav-logo {
+    height: 45px;
+  }
+
+  .nav-list {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: rgba(24,52,47,.97);
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 0;
+    display: none;
+  }
+
+  .nav-list.active {
+    display: flex;
+  }
+
+  .hero {
+    padding: 140px 20px 100px;
+  }
+
+  .hero h1 {
+    font-size: 38px;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+
+  .cta-btn {
+    font-size: 18px;
+    padding: 15px 30px;
+  }
+
+  .section {
+    margin: 70px auto;
+  }
+}
