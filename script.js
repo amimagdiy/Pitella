@@ -1,45 +1,26 @@
 const toggleBtn = document.getElementById("langToggle");
 const htmlRoot = document.getElementById("htmlRoot");
-const hamburger = document.querySelector(".hamburger");
-const navList = document.querySelector(".navbar ul");
+const navbar = document.querySelector(".navbar");
 
 let currentLang = localStorage.getItem("lang") || "ar";
 applyLanguage(currentLang);
 
-toggleBtn.addEventListener("click", () => {
-  currentLang = currentLang === "en" ? "ar" : "en";
+toggleBtn.onclick = () => {
+  currentLang = currentLang === "ar" ? "en" : "ar";
   localStorage.setItem("lang", currentLang);
   applyLanguage(currentLang);
-});
+};
 
-function applyLanguage(lang){
-  document.querySelectorAll("[data-en]").forEach(el=>{
+function applyLanguage(lang) {
+  document.querySelectorAll("[data-en]").forEach(el => {
     el.textContent = el.getAttribute(`data-${lang}`);
   });
 
-  if(lang==="ar"){
-    htmlRoot.setAttribute("lang","ar");
-    htmlRoot.setAttribute("dir","rtl");
-    toggleBtn.textContent="EN";
-  }else {
-    htmlRoot.setAttribute("lang","en");
-    htmlRoot.setAttribute("dir","ltr");
-    toggleBtn.textContent="AR";
-  }
+  htmlRoot.lang = lang;
+  htmlRoot.dir = lang === "ar" ? "rtl" : "ltr";
+  toggleBtn.textContent = lang === "ar" ? "EN" : "AR";
 }
 
-// Hamburger Menu
-hamburger.addEventListener("click", () => {
-  hamburger.classList.toggle("active");
-  navList.classList.toggle("active");
-});
-// Navbar background on scroll
-const navbar = document.querySelector('.navbar');
-
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 50) {
-    navbar.classList.add('scrolled');
-  } else {
-    navbar.classList.remove('scrolled');
-  }
+window.addEventListener("scroll", () => {
+  navbar.classList.toggle("scrolled", window.scrollY > 50);
 });
