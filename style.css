@@ -49,6 +49,8 @@ body {
   display: flex;
   justify-content: center;
   gap: 40px;
+  margin: 0;     
+  padding: 0;    
 }
 
 .navbar a {
@@ -61,6 +63,11 @@ body {
 .navbar a:hover {
   color: var(--light-green);
 }
+
+body {
+  padding-top: 80px;
+}
+
 
 /* زر تغيير اللغة */
 .lang-toggle {
